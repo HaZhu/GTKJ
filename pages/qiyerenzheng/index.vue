@@ -41,19 +41,6 @@
 	          </view>
 	          <text class="self-start font_5 text_4">1234567890</text>
 	        </view>
-	        <!-- <view class="flex-col group_5">
-	          <view class="flex-row justify-between group_6">
-	            <text class="font_3">公司所在地/区</text>
-	            <view class="flex-row items-center">
-	              <text class="font_4">浙江省杭州市</text>
-	              <image
-	                class="shrink-0 image_7 ml-10"
-	                src="https://ide.code.fun/api/image?token=6930ce0d9520a30011f760e3&name=17434277495109141829.png"
-	              />
-	            </view>
-	          </view>
-	          <text class="font_4 text_6 mt-25">萧山区盈丰街道风情大道建设路口电联产融大厦2幢2302室</text>
-	        </view> -->
 	      </view>
 	    </view>
 	  </view>
@@ -72,7 +59,7 @@
 	            <template v-else>
 	              <image
 	                class="image_9"
-	                src="https://ide.code.fun/api/image?token=6930ce0d9520a30011f760e3&name=05d088c8bb120a6a718cb969a1627d04.png"
+	                src="/static/sf_2.png"
 	              />
 	            </template>
 	          </view>
@@ -88,7 +75,7 @@
 	            <template v-else>
 	              <image
 	                class="image_9"
-	                src="https://ide.code.fun/api/image?token=6930ce0d9520a30011f760e3&name=05d088c8bb120a6a718cb969a1627d04.png"
+	                src="/static/sf_2.png"
 	              />
 	            </template>
 	          </view>
@@ -97,130 +84,7 @@
 	      </view>
 	    </view>
 	  </view>
-	  <!-- <view class="flex-col section_8">
-	    <view class="flex-col items-start group_8">
-	      <text class="font_6">文档资料</text>
-	      <text class="font_7 mt-10">文档需拍摄原件，且在有效期内</text>
-	    </view>
-	    <view class="grid mt-8">
-	      <view class="flex-col grid-item">
-	        <view class="flex-col justify-start items-center self-stretch section_7">
-	          <view class="flex-col justify-start section_9">
-	            <view class="flex-col section_10">
-	              <view class="flex-col self-stretch group_10">
-	                <text class="self-center font_9">租赁合同</text>
-	                <view class="flex-row self-stretch relative group_12">
-	                  <view class="flex-col self-start group_16">
-	                    <view class="section_11"></view>
-	                    <view class="section_11 mt-16"></view>
-	                  </view>
-	                  <view class="flex-col justify-start relative group_13 ml-14">
-	                    <view class="section_12"></view>
-	                    <view class="flex-col justify-start group_14 pos_5">
-	                      <view class="section_12"></view>
-	                      <image
-	                        class="image_9 pos_6"
-	                        src="https://ide.code.fun/api/image?token=6930ce0d9520a30011f760e3&name=05d088c8bb120a6a718cb969a1627d04.png"
-	                      />
-	                    </view>
-	                  </view>
-	                </view>
-	              </view>
-	              <view class="self-start section_13"></view>
-	            </view>
-	          </view>
-	        </view>
-	        <text class="self-center font_8 mt-10">租赁合同</text>
-	      </view>
-	      <view class="flex-col grid-item">
-	        <view class="flex-col justify-start items-center self-stretch section_7">
-	          <view class="flex-col justify-start section_9">
-	            <view class="flex-col section_10">
-	              <view class="flex-col self-stretch group_11">
-	                <text class="self-center font_9">合规承诺函</text>
-	                <view class="flex-row self-stretch relative group_15">
-	                  <view class="flex-col self-start group_16">
-	                    <view class="section_11"></view>
-	                    <view class="section_11 mt-16"></view>
-	                  </view>
-	                  <view class="flex-col justify-start relative group_13 ml-14">
-	                    <view class="section_12"></view>
-	                    <view class="flex-col justify-start group_14 pos_7">
-	                      <view class="section_12"></view>
-	                      <image
-	                        class="image_9 pos_8"
-	                        src="https://ide.code.fun/api/image?token=6930ce0d9520a30011f760e3&name=05d088c8bb120a6a718cb969a1627d04.png"
-	                      />
-	                    </view>
-	                  </view>
-	                </view>
-	              </view>
-	              <view class="self-start section_13"></view>
-	            </view>
-	          </view>
-	        </view>
-	        <text class="self-center font_8 mt-10">合规承诺函</text>
-	      </view>
-	      <view class="flex-col grid-item">
-	        <view class="flex-col justify-start items-center self-stretch section_7">
-	          <view class="flex-col justify-start section_9">
-	            <view class="flex-col section_10">
-	              <view class="flex-col self-stretch group_10">
-	                <text class="font_9 text_11">居间协议(一)</text>
-	                <view class="flex-row relative group_12">
-	                  <view class="flex-col self-start group_16">
-	                    <view class="section_11"></view>
-	                    <view class="section_11 mt-16"></view>
-	                  </view>
-	                  <view class="flex-col justify-start relative group_13 ml-14">
-	                    <view class="section_12"></view>
-	                    <view class="flex-col justify-start group_14 pos_9">
-	                      <view class="section_12"></view>
-	                      <image
-	                        class="image_9 pos_10"
-	                        src="https://ide.code.fun/api/image?token=6930ce0d9520a30011f760e3&name=05d088c8bb120a6a718cb969a1627d04.png"
-	                      />
-	                    </view>
-	                  </view>
-	                </view>
-	              </view>
-	              <view class="self-start section_13"></view>
-	            </view>
-	          </view>
-	        </view>
-	        <text class="self-center font_8 mt-10">居间协议(一)</text>
-	      </view>
-	      <view class="flex-col grid-item">
-	        <view class="flex-col justify-start items-center self-stretch section_7">
-	          <view class="flex-col justify-start section_9">
-	            <view class="flex-col section_10">
-	              <view class="flex-col self-stretch group_11">
-	                <text class="font_9 text_1">居间协议(二)</text>
-	                <view class="flex-row relative group_15">
-	                  <view class="flex-col self-start group_16">
-	                    <view class="section_11"></view>
-	                    <view class="section_11 mt-16"></view>
-	                  </view>
-	                  <view class="flex-col justify-start relative group_13 ml-14">
-	                    <view class="section_12"></view>
-	                    <view class="flex-col justify-start group_14 pos_11">
-	                      <view class="section_12"></view>
-	                      <image
-	                        class="image_9 pos_12"
-	                        src="https://ide.code.fun/api/image?token=6930ce0d9520a30011f760e3&name=05d088c8bb120a6a718cb969a1627d04.png"
-	                      />
-	                    </view>
-	                  </view>
-	                </view>
-	              </view>
-	              <view class="self-start section_13"></view>
-	            </view>
-	          </view>
-	        </view>
-	        <text class="self-center font_8 mt-10">居间协议(二)</text>
-	      </view>
-	    </view>
-	  </view> -->
+	  
 	  <view class="flex-col justify-start items-center text-wrapper_2" @click="nextPage"><text class="font_3 text_8">提交认证</text></view>
 	</view>
 </template>
@@ -272,12 +136,6 @@
 </script>
 
 <style lang="scss" scoped>
-	.mt-43 {
-	  margin-top: 43rpx;
-	}
-	.ml-45 {
-	  margin-left: 45rpx;
-	}
 	.mt-25 {
 	  margin-top: 25rpx;
 	}
@@ -287,60 +145,6 @@
 	  overflow-y: auto;
 	  overflow-x: hidden;
 	  height: 100%;
-	  .section {
-	    padding: 28.66rpx 28.51rpx 19rpx 34rpx;
-	    background-color: #ffffff;
-	    backdrop-filter: blur(20rpx);
-	    border-bottom: solid 1rpx #0000001a;
-	    .group {
-	      padding-left: 35rpx;
-	      .text {
-	        color: #000000;
-	        font-size: 30rpx;
-	        font-family: 'Helvetica';
-	        line-height: 36rpx;
-	        letter-spacing: -0.6rpx;
-	      }
-	      .image {
-	        width: 34rpx;
-	        height: 22rpx;
-	      }
-	      .image_2 {
-	        width: 31rpx;
-	        height: 22rpx;
-	      }
-	      .image_3 {
-	        width: 48.83rpx;
-	        height: 22.67rpx;
-	      }
-	    }
-	    .image_4 {
-	      width: 18rpx;
-	      height: 34rpx;
-	    }
-	    .pos {
-	      position: absolute;
-	      left: 0;
-	      top: 50%;
-	      transform: translateY(-50%);
-	    }
-	    .text_2 {
-	      color: #000000e6;
-	      font-size: 34rpx;
-	      font-family: 'PingFang SC';
-	      line-height: 48rpx;
-	    }
-	    .image_5 {
-	      width: 35rpx;
-	      height: 7rpx;
-	    }
-	    .pos_2 {
-	      position: absolute;
-	      right: 10rpx;
-	      top: 50%;
-	      transform: translateY(-50%);
-	    }
-	  }
 	  .section_2 {
 	    padding: 40rpx 16rpx 35rpx 28rpx;
 	    background-color: #ffffff;
@@ -461,7 +265,7 @@
 	        .image-wrapper {
 	          height: 150rpx;
 	          border-radius: 8rpx;
-	          background-image: url('https://ide.code.fun/api/image?token=6930ce0d9520a30011f760e3&name=aff2ea01904b91d34b94304a39446af8.png');
+	          background-image: url('/static/cd_bg.png');
 	          background-size: 100% 100%;
 	          background-repeat: no-repeat;
 	          display: flex;
@@ -480,24 +284,6 @@
 	      }
 	    }
 	  }
-	  .section_8 {
-	    margin-top: 20rpx;
-	    padding: 34rpx 0 17.5rpx;
-	    background-color: #ffffff;
-		display: none;
-	    .grid {
-	      padding: 0 14rpx;
-	      height: 528rpx;
-	      display: grid;
-	      grid-template-rows: repeat(2, minmax(0, 1fr));
-	      grid-template-columns: repeat(2, minmax(0, 1fr));
-	      row-gap: 0;
-	      column-gap: 0;
-	      .grid-item {
-	        padding: 17.5rpx 14rpx 17.5rpx 16rpx;
-	      }
-	    }
-	  }
 	  .group_8 {
 	    padding: 0 30rpx;
 	    .font_7 {
@@ -513,7 +299,7 @@
 	    border-radius: 8rpx;
 	    .image-wrapper_2 {
 	      height: 150rpx;
-	      background-image: url('https://ide.code.fun/api/image?token=6930ce0d9520a30011f760e3&name=75e9c063bf4b32b239132d3eab3bb560.png');
+	      background-image: url('/static/cd_bg.png');
 	      background-position: 0% 0%;
 	      background-size: 100% 100%;
 	      background-repeat: no-repeat;
@@ -525,7 +311,7 @@
 	    }
 	    .section_9 {
 	      padding: 10rpx 0;
-	      background-image: url('https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/67e550fbd54496f19f14191e/67e551b1797f850011fdd691/17434277504525954452.png');
+	      background-image: url('/static/sf_bg.png');
 	      background-position: 0% 0%;
 	      background-size: 100% 100%;
 	      background-repeat: no-repeat;
@@ -661,32 +447,7 @@
 	    font-weight: 600;
 	    color: #3a3d4b;
 	  }
-	  .group_17 {
-	    padding: 0 30rpx 40rpx;
-		position: absolute;
-		width: 100%;
-		bottom: 0;
-		left: 0;
-	    .group_18 {
-	      padding: 32rpx 0 31rpx;
-		  display: flex;
-		  align-items: center;
-	      .section_14 {
-	        background-color: #ffffff;
-	        border-radius: 4rpx;
-	        width: 28rpx;
-	        height: 28rpx;
-	        border: solid 2rpx #dddddd;
-	      }
-	      .group_19 {
-	        line-height: 33rpx;
-	        height: 33rpx;
-	        .text_7 {
-	          color: #727a86;
-	        }
-	      }
-	    }
-	  }
+	
 	  .font {
 	    font-size: 24rpx;
 	    font-family: 'PingFang SC';

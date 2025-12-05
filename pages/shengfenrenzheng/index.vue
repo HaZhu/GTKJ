@@ -52,15 +52,15 @@
 	              <template v-else>
 	                <image
 	                  class="image_7"
-	                  src="https://ide.code.fun/api/image?token=6930ce0d9520a30011f760e3&name=97eb587c0d6e73f4620387eabb23ab5a.png"
+	                  src="/static/sf_3.png"
 	                />
 	                <image
 	                  class="image_8 ml-3"
-	                  src="https://ide.code.fun/api/image?token=6930ce0d9520a30011f760e3&name=05d088c8bb120a6a718cb969a1627d04.png"
+	                  src="/static/sf_2.png"
 	                />
 	                <image
 	                  class="image_9 ml-3"
-	                  src="https://ide.code.fun/api/image?token=6930ce0d9520a30011f760e3&name=74b3e7b022263683441baf0fa4f772db.png"
+	                  src="/static/sf_1.png"
 	                />
 	              </template>
 	            </view>
@@ -78,15 +78,15 @@
 	              <template v-else>
 	                <image
 	                  class="image_1"
-	                  src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/67e550fbd54496f19f14191e/67e551b1797f850011fdd691/17434277521358072214.png"
+	                  src="/static/sf_4.png"
 	                />
 	                <image
 	                  class="image_8 image_10"
-	                  src="https://ide.code.fun/api/image?token=6930ce0d9520a30011f760e3&name=05d088c8bb120a6a718cb969a1627d04.png"
+	                  src="/static/sf_2.png"
 	                />
 	                <image
 	                  class="image_7 image_12"
-	                  src="https://ide.code.fun/api/image?token=6930ce0d9520a30011f760e3&name=97eb587c0d6e73f4620387eabb23ab5a.png"
+	                  src="/static/sf_3.png"
 	                />
 	              </template>
 	            </view>
@@ -146,9 +146,6 @@
 </script>
 
 <style lang="scss" scoped>
-	.mt-43 {
-	  margin-top: 43rpx;
-	}
 	.ml-3 {
 	  margin-left: 3rpx;
 	}
@@ -158,60 +155,6 @@
 	  width: 100%;
 	  overflow-y: hidden;
 	  height: 100vh;
-	  .section {
-	    padding: 28.66rpx 28.51rpx 19rpx 34rpx;
-	    background-color: #ffffff;
-	    backdrop-filter: blur(20rpx);
-	    border-bottom: solid 1rpx #0000001a;
-	    .group {
-	      padding-left: 35rpx;
-	      .text {
-	        color: #000000;
-	        font-size: 30rpx;
-	        font-family: 'Helvetica';
-	        line-height: 36rpx;
-	        letter-spacing: -0.6rpx;
-	      }
-	      .image {
-	        width: 34rpx;
-	        height: 22rpx;
-	      }
-	      .image_2 {
-	        width: 31rpx;
-	        height: 22rpx;
-	      }
-	      .image_3 {
-	        width: 48.83rpx;
-	        height: 22.67rpx;
-	      }
-	    }
-	    .image_4 {
-	      width: 18rpx;
-	      height: 34rpx;
-	    }
-	    .pos {
-	      position: absolute;
-	      left: 0;
-	      top: 50%;
-	      transform: translateY(-50%);
-	    }
-	    .text_2 {
-	      color: #000000e6;
-	      font-size: 34rpx;
-	      font-family: 'PingFang SC';
-	      line-height: 48rpx;
-	    }
-	    .image_5 {
-	      width: 35rpx;
-	      height: 7rpx;
-	    }
-	    .pos_2 {
-	      position: absolute;
-	      right: 10rpx;
-	      top: 50%;
-	      transform: translateY(-50%);
-	    }
-	  }
 	  .section_2 {
 	    padding: 40rpx 16rpx 35rpx 28rpx;
 	    background-color: #ffffff;
@@ -310,7 +253,7 @@
 	          border-radius: 8rpx;
 	          .section_7 {
 	            padding: 10rpx 0;
-	            background-image: url('https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/67e550fbd54496f19f14191e/67e551b1797f850011fdd691/17434277504525954452.png');
+	            background-image: url('/static/sf_bg.png');
 	            background-position: 0% 0%;
 	            background-size: 100% 100%;
 	            background-repeat: no-repeat;

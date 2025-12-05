@@ -16,9 +16,6 @@
           <text class="card-title">{{ item.title }}</text>
         </view>
       </view>
-          <!-- <view class="flex-col justify-start items-center text-wrapper_2"
-          ><text class="font_2 text_7" @click="goToNext">确认</text></view
-        > -->
     </view>
   </view>
 </template>
@@ -132,22 +129,8 @@ export default {
   font-weight: 600;
   color: #3a3d4b;
 }
-.card-desc {
-  margin-top: 4rpx;
-  font-size: 24rpx;
-  line-height: 34rpx;
-  color: #777d86;
-}
 
-.text-wrapper_2 {
-  padding: 29rpx 0;
-  background-color: #1e60ff;
-  border-radius: 50rpx;
-  width: 590rpx;
-  .text_7 {
-    color: #ffffff;
-  }
-}
+
 .wrap {
   display: flex;
   flex-direction: column;
