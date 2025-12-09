@@ -38,9 +38,9 @@
 			}
 		},
 		{
-			"path": "pages/truckDriver/home/index",
+			"path": "pages/truckDriver/index",
 			"style": {
-				"navigationBarTitleText": "抢单列表"
+				"navigationStyle": "custom"
 			}
 		},
 		{
@@ -54,31 +54,8 @@
 			"style": {
 				"navigationBarTitleText": "忘记密码"
 			}
-		},
-		{
-			"path": "pages/truckDriver/records/index",
-			"style": {
-				"navigationBarTitleText": "接单记录"
-			}
-		},
-		{
-			"path": "pages/truckDriver/weight/index",
-			"style": {
-				"navigationBarTitleText": "称重"
-			}
-		},
-		{
-			"path": "pages/truckDriver/bill/index",
-			"style": {
-				"navigationBarTitleText": "磅单"
-			}
-		},
-		{
-			"path": "pages/truckDriver/profile/index",
-			"style": {
-				"navigationBarTitleText": "个人中心"
-			}
 		}
+		
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
