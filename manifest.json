@@ -1,7 +1,7 @@
 {
     "name" : "gtkj-mini-app",
     "appid" : "__UNI__30D0A51",
-    "description" : "",
+    "description" : "目里小程序测试",
     "versionName" : "1.0.0",
     "versionCode" : "100",
     "transformPx" : false,

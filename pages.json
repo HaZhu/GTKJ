@@ -1,5 +1,11 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"pages": [
+		{
+			"path": "pages/login/index",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
 		{
 			"path": "pages/index/index",
 			"style": {
@@ -29,6 +35,48 @@
 			"path": "pages/jiashizheng/index",
 			"style": {
 				"navigationBarTitleText": "驾驶证认证"
+			}
+		},
+		{
+			"path": "pages/truckDriver/home/index",
+			"style": {
+				"navigationBarTitleText": "抢单列表"
+			}
+		},
+		{
+			"path": "pages/login/registration/index",
+			"style": {
+				"navigationBarTitleText": "注册"
+			}
+		},
+		{
+			"path": "pages/login/forget-password/index",
+			"style": {
+				"navigationBarTitleText": "忘记密码"
+			}
+		},
+		{
+			"path": "pages/truckDriver/records/index",
+			"style": {
+				"navigationBarTitleText": "接单记录"
+			}
+		},
+		{
+			"path": "pages/truckDriver/weight/index",
+			"style": {
+				"navigationBarTitleText": "称重"
+			}
+		},
+		{
+			"path": "pages/truckDriver/bill/index",
+			"style": {
+				"navigationBarTitleText": "磅单"
+			}
+		},
+		{
+			"path": "pages/truckDriver/profile/index",
+			"style": {
+				"navigationBarTitleText": "个人中心"
 			}
 		}
 	],
