@@ -1,24 +1,25 @@
 <template>
 	<view class="content">
 		<view class="image-wrapper">
-			  <image
-				class="image"
-				src="/static/logo.png"
-				/>
+			<image
+			class="image"
+			src="/static/logo.png"
+			/>
 		</view>
 	    <view class="title">国泰科技</view>
 		<view class="uni-form-item uni-column">
-			<input type="tel" class="uni-input" name="" placeholder="请输入手机号" />
+			<input type="number" maxlength="11" class="uni-input" name="" placeholder="请输入手机号" />
 		</view>
 		<view class="uni-form-item uni-column">
-			<input type="password" class="uni-input" name="" placeholder="请输入密码" />
+			<input type="text" @input="maskPwd" class="uni-input" name="" placeholder="请输入密码" />
 		</view>
-		<button type="primary">登陆</button>
+		<button type="primary" @click="goTrucker">登陆</button>
 		<view class="links"><view @tap="gotoForgetPassword">忘记密码？</view><view>|</view><view class="link-highlight" @tap="gotoRegistration">注册账号</view></view>
 	</view>
 </template>
 
 <script>
+	import { login } from '@/api/index';
 	export default {
 		data() {
 			return {
@@ -29,11 +30,25 @@
 			
 		},
 		methods: {
-			gotoRegistration: function () {
+			async login(){
+				await login({
+					phone: '1233',
+					password: '1233'
+				})
+			},
+			goTrucker(){
+				this.login()
+				// uni.navigateTo({url: '/pages/truckDriver/index'});
+			},
+			gotoRegistration () {
 				uni.navigateTo({url: '/pages/login/registration/index'});
 			},
-			gotoForgetPassword: function () {
+			gotoForgetPassword () {
 				uni.navigateTo({url: '/pages/login/forget-password/index'});
+			},
+			maskPwd(e){
+				const len = (e && e.detail && typeof e.detail.value === 'string') ? e.detail.value.length : 0;
+				return '*'.repeat(len);
 			}
 		}
 	}
@@ -89,7 +104,7 @@
 	}
 	button[type="primary"]{
 		background-color: $color-primary;
-		border-radius: 0;
+		border-radius: 4upx;
 		font-size: 34upx;
 		margin-top: 60upx;
 	}

@@ -1,10 +1,10 @@
 <template>
   <view>
     <view v-for="(item, i) in 1" :key="i">
-      <uni-card :is-shadow="true">
+      <uni-card :is-shadow="false">
+        <view class="ok">正常</view>
         <view class="card-title">
-          <text>磅单编号：GTHNLSD-20251205-0061</text>
-          <text class="ok">正常</text>
+           磅单编号：GTHNLSD-20251205-006
         </view>
         <view class="row">驾驶员名字：李显广</view>
         <view class="row">车牌号：新A22962D</view>
@@ -20,7 +20,7 @@
         <view class="row">毛重：66.45吨 皮重：18.60吨 净重：47.85吨</view>
         <view class="row">扣吨：0.00吨 涨亏：0.00吨</view>
         <view class="actions">
-          <button class="btn" type="primary" size="mini">详情</button>
+          <view class="base_btn" @click="goDetail">详情</view>
         </view>
       </uni-card>
     </view>
@@ -41,32 +41,15 @@ export default {
     };
   },
   methods: {
-  
+    goDetail(){
+      uni.navigateTo({
+        url: '/pages/truckDriver/billDetail/index'
+      })
+    }
   },
 };
 </script>
 
 <style lang="scss" scoped>
-.card-title {
-  display: flex;
-  justify-content: space-between;
-  font-weight: 700;
-  font-size: 14px;
-  margin-bottom: 6px;
-}
-.ok {
-  color: #0a9f3a;
-}
-.row {
-  color: #666;
-  line-height: 22px;
-}
-.bold {
-  font-weight: 700;
-}
-.actions {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 6px;
-}
+
 </style>

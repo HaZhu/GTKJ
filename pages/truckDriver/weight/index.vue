@@ -1,7 +1,7 @@
 <template>
   <view>
     <view v-for="(item, i) in 5" :key="i">
-      <uni-card :is-shadow="true">
+      <uni-card :is-shadow="false">
         <view class="row">车牌号：新A22962D</view>
         <view class="row">识别号：新A22962D</view>
         <view class="row">重量：<text class="bold">66.45吨</text></view>
@@ -13,7 +13,7 @@
         <view class="row">供货单位：海南煤炭加工有限公司（老石旦洗煤厂）</view>
         <view class="row">收货单位：国能宁夏能源煤炭有限公司（大武口）</view>
         <view class="actions">
-          <button class="btn" type="primary" size="mini">详情</button>
+          <view class="base_btn" @click="goDetail">详情</view>
         </view>
       </uni-card>
     </view>
@@ -34,22 +34,15 @@ export default {
     };
   },
   methods: {
-  
+    goDetail(){
+      uni.navigateTo({
+        url: '/pages/truckDriver/weightDetail/index'
+      })
+    }
   },
 };
 </script>
 
 <style lang="scss" scoped>
-.row {
-  color: #666;
-  line-height: 22px;
-}
-.bold {
-  font-weight: 700;
-}
-.actions {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 6px;
-}
+
 </style>

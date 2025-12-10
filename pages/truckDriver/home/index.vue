@@ -1,7 +1,7 @@
 <template>
   <view>
     <view v-for="(item, i) in 2" :key="i">
-      <uni-card :is-shadow="true">
+      <uni-card :is-shadow="false">
         <view class="card-title">江西核工业建设有限公司</view>
         <view class="row">发货地址：内蒙古自治区乌海市乌达区黄白茨</view>
         <view class="row"
@@ -19,7 +19,7 @@
         <view class="row">物流公司：江西核工业建设有限公司</view>
         <view class="row">备注：—</view>
         <view class="actions">
-          <button class="btn" type="primary" size="mini">抢单</button>
+           <view class="base_btn">抢单</view>
         </view>
       </uni-card>
     </view>
@@ -47,25 +47,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.card-title {
-  font-weight: 700;
-  font-size: 15px;
-  margin-bottom: 6px;
-}
-.row {
-  color: #666;
-  line-height: 22px;
-}
-.row.g {
-  color: #0a9f3a;
-  font-weight: 700;
-}
-.bold {
-  font-weight: 700;
-}
-.actions {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 6px;
-}
+
 </style>

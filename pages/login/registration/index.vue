@@ -1,25 +1,25 @@
 <template>
 	<view class="content">
 			<view class="image-wrapper">
-			  <image
-				class="image"
-				src="/static/logo.png"
-				/>
+			<image
+			class="image"
+			src="/static/logo.png"
+			/>
 		</view>
 	    <view class="title">国泰科技</view>
 		<view class="uni-form-item uni-column">
-			<input type="tel" class="uni-input" name="" placeholder="请输入手机号" />
+			<input type="number" maxlength="11" class="uni-input" name="" placeholder="请输入手机号" />
 		</view>
 		<view class="uni-form-item uni-column column-with-btn">
 			<input type="text" class="uni-input" name="" placeholder="请输入图片验证码" v-model="captchaImg" />
 			<image  mode="" class="img-captcha"></image>
 		</view>
 		<view class="uni-form-item uni-column column-with-btn">
-			<input type="number" class="uni-input" name="" placeholder="请输入验证码" />
+			<input type="number" maxlength="6" class="uni-input" name="" placeholder="请输入验证码" />
 			<button :class="{active : !disableCodeBtn}" :disabled="disableCodeBtn" @tap="sendCode">{{codeBtn.text}}</button>
 		</view>
 		<view class="uni-form-item uni-column">
-			<input type="password" class="uni-input" name="" placeholder="请输入密码" />
+			<input type="text" @input="maskPwd" class="uni-input" name="" placeholder="请输入密码" />
 		</view>
 		<button type="primary">注册</button>
 		<view class="links">已有账号？<view class="link-highlight" @tap="gotoLogin">点此登陆</view></view>
@@ -62,6 +62,10 @@
 				uni.navigateTo({
 					url: 'login'
 				})
+			},
+			maskPwd(e){
+				const len = (e && e.detail && typeof e.detail.value === 'string') ? e.detail.value.length : 0;
+				return '*'.repeat(len);
 			}
 		},
 		computed: {
@@ -144,6 +148,7 @@
 	button[type="primary"]{
 		background-color: $color-primary;
 		border-radius: 0;
+		border-radius: 4upx;
 		font-size: 34upx;
 		margin-top: 60upx;
 	}

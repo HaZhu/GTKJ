@@ -44,6 +44,36 @@
 			}
 		},
 		{
+			"path": "pages/truckDriver/weightDetail/index",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/truckDriver/billDetail/index",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/truckDriver/vehicleAuth/index",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/truckDriver/weighInstructions/index",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/truckDriver/setPassword/index",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
 			"path": "pages/login/registration/index",
 			"style": {
 				"navigationBarTitleText": "注册"

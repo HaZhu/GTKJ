@@ -41,7 +41,50 @@
 	  width: 100vw;
 	  height: 100vh;
 	}
-
+	.card-title {
+	display: flex;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 28px;
+	color: #000;;
+	}
+	.ok {
+	text-align: right;
+	color: #0a9f3a;
+	font-size: 13px;
+	font-weight: bold;
+	}
+	.row {
+	color: rgba(0,0,0,0.6);
+	font-size: 13px;
+	line-height: 26px;
+	font-weight: bold;
+	}
+	.wait {
+	text-align: right;
+	color: rgba(0,0,0,0.6);
+	font-size: 13px;
+	font-weight: bold;
+	}
+	.bold {
+	font-weight: bold;
+	}
+	.actions {
+	display: flex;
+	flex-direction: row-reverse;
+	margin-top: 6px;
+	}
+	.g{
+	color: #0a9f3a;
+	}
+	.base_btn{
+		background-color: #1e60ff;
+		color: #fff;
+		border-radius: 4rpx;
+		font-weight: bold;
+		font-size: 28rpx;
+		padding: 14rpx 34rpx;
+	}
 	.text-wrapper_2 {
 	    margin: 40rpx 30rpx 0;
 	    padding: 29rpx 0;

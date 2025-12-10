@@ -8,7 +8,7 @@
     <view class="header-section" :style="{ top: (44 + statusBarHeight) + 'px' }">
       <!-- 搜索栏 -->
       <uni-search-bar
-        v-if="active === 0 || active === 3"
+        v-if="active === 0 || active === 1 || active === 3"
         radius="100"
         cancelButton="none"
         placeholder="搜索"
@@ -34,24 +34,28 @@
 
       <!-- 日期选择器 -->
       <view v-if="active === 1 || active === 2 || active === 3" class="bar">
-        <uni-datetime-picker
-          style="opacity: 0;"
-          :border="false"
-          v-model="range"
-          type="daterange"
-          rangeSeparator="至"
-        />
-        <picker mode="date" :value="date" @change="onDateChange">
-          <view class="date">{{ date }} <text class="date_icon">▼</text></view>
-        </picker>
+        <view class="daterangewrap">
+          <uni-datetime-picker
+            :border="false"
+            v-model="range"
+            :clear-icon="false"
+            type="daterange"
+            rangeSeparator="至"
+          />
+        </view>
+        <view class="date">{{ date }} <text class="date_icon">▼</text></view>
       </view>
 
       <!-- 汇总信息 -->
       <view v-if="active === 3" class="summary">
-        <view class="item">毛重：<text class="bold">66.45吨</text></view>
-        <view class="item">皮重：<text class="bold">18.60吨</text></view>
-        <view class="item">净重：<text class="bold">47.85吨</text></view>
-        <view class="item">车数：<text class="bold">1辆</text></view>
+        <view class="summary_wrap">
+           <view class="item">毛重：<text class="bold">66.45吨</text></view>
+           <view class="item">皮重：<text class="bold">18.60吨</text></view>
+        </view>
+        <view class="summary_wrap">
+           <view class="item">净重：<text class="bold">47.85吨</text></view>
+           <view class="item">车数：<text class="bold">1辆</text></view>
+        </view>
       </view>
 
       <!-- 分页器 -->
@@ -279,33 +283,59 @@ export default {
 }
 .bar {
   padding: 0px 12px;
+  position: relative;
+  height: 70rpx;
+  display: flex;
+  align-items: center;
 }
 .date {
-  font-size: 26rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+}
+.daterangewrap{
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+::v-deep .uni-date-range{
+  opacity: 0;
 }
 .date_icon{
-  font-size: 20rpx;
+  font-size: 18rpx;
+  margin-left: 10rpx;
 }
 .summary {
   display: flex;
-  flex-wrap: wrap;
-  padding: 8px 12px;
-  gap: 8px;
+  flex-wrap:wrap;
+  flex-direction: column;
+  padding: 0 20rpx;
 }
-.summary .item {
-  background: #fff;
-  border-radius: 6px;
-  padding: 8px 10px;
-  color: #444;
-  font-size: 13px;
+.summary_wrap{
+  display: flex;
+  gap: 20rpx;
+}
+.summary_wrap .item {
+  color: #000;
+  font-size: 11px;
+  font-weight: bold;
 }
 .pager {
   display: flex;
   justify-content: space-between;
   padding: 8px 12px 20px;
   width: 100%;
-  font-size: 24rpx;
-  color: #666;
+  font-size: 26rpx;
+  .prev{
+    color: rgba(0,0,0,0.6);
+    font-weight: bold;
+  }
+  .next{
+    color: rgba(0,0,0,0.6);
+    font-weight: bold;
+  }
   .center{
     color: #000;
     font-weight: bold;

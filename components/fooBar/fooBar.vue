@@ -8,7 +8,7 @@
       >
         <view class="nav-icon">
           <view class="circle">
-            <i class="iconfont home" />
+            <i class="iconfont icon-uniE104" />
           </view>
         </view>
         <view class="nav-text"> 抢单列表 </view>
@@ -20,15 +20,19 @@
       >
         <view class="nav-icon">
           <view class="circle">
-            <i class="iconfont cate" />
+            <i class="iconfont icon-jiedanjilu" />
           </view>
         </view>
         <view class="nav-text"> 接单记录 </view>
       </view>
-      <view class="nav-tab" :class="{ 'nav-tab-active': home === 2 }" @click="toIndex(2)">
+      <view
+        class="nav-tab"
+        :class="{ 'nav-tab-active': home === 2 }"
+        @click="toIndex(2)"
+      >
         <view class="nav-icon">
           <view class="circle">
-            <i class="iconfont search" />
+            <i class="iconfont icon-chengzhong" />
           </view>
         </view>
         <view class="nav-text"> 称重 </view>
@@ -40,7 +44,7 @@
       >
         <view class="nav-icon">
           <view class="circle">
-            <i class="iconfont shop" />
+            <i class="iconfont icon-bangdanguanli" />
           </view>
         </view>
         <view class="nav-text"> 磅单 </view>
@@ -52,7 +56,7 @@
       >
         <view class="nav-icon">
           <view class="circle">
-            <i class="iconfont user" />
+            <i class="iconfont icon-gerenzhongxin" />
           </view>
         </view>
         <view class="nav-text"> 个人中心 </view>
